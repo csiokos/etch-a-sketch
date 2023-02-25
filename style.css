@@ -8,8 +8,12 @@ body{
 .header{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 400px;
+  justify-content:center;
+}
+
+#grid-size-input{
+  padding: 5px;
+  margin: 5px;
 }
 
 .board{
@@ -23,4 +27,9 @@ body{
   display: flex;
   justify-content: space-between;
   width: 500px;
+}
+
+input{
+  border-radius: 10px;
+  width: 80px;
 }

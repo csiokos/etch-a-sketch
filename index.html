@@ -8,8 +8,8 @@
   <body>
     <h1>Etch-a-sketch</h1>
     <div class="header">
-      <h4>Select Size</h4>
-      <button id="selection" class="btn btn-warning">Select size</button>
+     <input type="number" id="grid-size-input" min="2" max="99">
+     <button type="button" id="myButton" class="btn btn-primary">Submit</button>
     </div>
 
     <div class="board">
@@ -17,9 +17,9 @@
     </div>
 
     <div class="footer">
-      <button id="black" class="btn btn-dark">Black</button>
-      <button id="color" class="btn btn-danger">Color</button>
-      <button id="reset" class="btn btn-secondary">Reset Board</button>
+      <button id="black" class="btn btn-dark" onclick="setColor('black')">Black</button>
+      <button id="color" class="btn btn-danger" onclick="setColor('random')">Color</button>
+      <button id="reset" class="btn btn-secondary" onclick="setColor('white')">Reset Board</button>
     </div>
     
     <script src="script.js"></script>
