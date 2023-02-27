@@ -5,6 +5,10 @@ body{
   align-items: center;
 }
 
+#myBody{
+  background-color:seagreen;
+}
+
 .header{
   display: flex;
   align-items: center;
@@ -22,6 +26,7 @@ body{
   border: 1px solid black;
   margin:12px;
   display: grid;
+  background-color: white;
 }
 .footer{
   display: flex;

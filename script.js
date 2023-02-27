@@ -33,7 +33,7 @@ function createBoard(size){
 
   }
 
-}
+};
 
 
 createBoard(16);
@@ -52,14 +52,21 @@ myButton.addEventListener('click',()=>{
 function colorDiv(div){
   if(color === 'random'){
     div.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+  
   } else {
     div.style.backgroundColor = 'black'
   }
 
 }
 
-function setColor(colorChoice){
+function setColor(colorChoice, reset=false){
   color = colorChoice;
 
-}
+  if (reset) {
+    const divs = document.querySelectorAll('.board div');
+    divs.forEach(div => {
+      div.style.backgroundColor = 'white';
+    });
+  }
 
+}
